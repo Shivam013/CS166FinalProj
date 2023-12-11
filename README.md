@@ -1,5 +1,6 @@
 # CS166FinalProj
 ARP Poisoning and DNS Spoof
+By: Shivam Amin, Ravi Gadgil, Vincent Nguyen, Brian Pham, and William Tran
 
 ## Files
 
